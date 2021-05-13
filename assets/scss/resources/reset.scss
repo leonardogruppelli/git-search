@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  vertical-align: baseline;
+  background-color: map-get($map: $colors, $key: 'primary');
+  font-family: Montserrat, sans-serif;
+  font-size: rem(16px);
+  font-weight: 400;
+  color: map-get($map: $colors, $key: 'secondary');
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,6 @@
+@import 'rupture-sass/rupture';
+
+$rupture: map-merge($rupture, (
+  scale: 0 480px 768px 1024px,
+  scale-names: 'phone' 'tablet' 'desktop' 'monitor'
+));
