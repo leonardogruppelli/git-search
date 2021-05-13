@@ -1,4 +1,7 @@
-$container: 860px;
+$container: (
+  'default': 860px,
+  'small': 420px
+);
 
 $colors: (
   'primary': #F8FAFB,
@@ -8,7 +11,8 @@ $colors: (
   'quinary': #F2F2F2,
   'senary': #EDEDED,
   'septenary': #747474,
-  'octonary': #F7F9FA
+  'octonary': #F7F9FA,
+  'nonary': #E0E0E0
 );
 
 $branding: (
