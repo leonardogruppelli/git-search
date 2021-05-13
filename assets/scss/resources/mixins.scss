@@ -69,3 +69,11 @@ $rem-px-only: false !default;
     }
   }
 }
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

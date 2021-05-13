@@ -1,10 +1,9 @@
 <template>
-  <div
-    class="container"
-    :class="classes"
+  <img
+    :src="logo"
+    alt="GitSearch"
+    class="logo"
   >
-    <slot />
-  </div>
 </template>
 
 <script lang="ts">
@@ -14,24 +13,24 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 export default class extends Vue {
   @Prop({ type: Boolean, default: false }) small!: boolean
 
+  logo: string = require('~/assets/images/logo.png')
+
   get classes() {
     return {
-      'container--small': this.small
+      'logo--small': this.small
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/resources/variables';
-
-.container {
-  width: 100%;
-  max-width: map-get($map: $container, $key: 'default');
-  margin: 0 auto;
+.logo {
+  width: 140px;
+  height: 140px;
 
   &--small {
-    max-width: map-get($map: $container, $key: 'small');
+    width: 50px;
+    height: 50px;
   }
 }
 </style>
