@@ -22,6 +22,10 @@ body {
   line-height: 1;
 }
 
+main {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
@@ -35,6 +39,10 @@ button {
 
 a {
   text-decoration: none;
+}
+
+img {
+  border: 0;
 }
 
 input {

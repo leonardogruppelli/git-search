@@ -1,3 +1,8 @@
+$header: (
+  'mobile': 50px,
+  'desktop': 60px
+);
+
 $container: (
   'default': 860px,
   'small': 420px
@@ -12,7 +17,8 @@ $colors: (
   'senary': #EDEDED,
   'septenary': #747474,
   'octonary': #F7F9FA,
-  'nonary': #E0E0E0
+  'nonary': #E0E0E0,
+  'denary': #90A4AE
 );
 
 $branding: (
@@ -22,7 +28,17 @@ $branding: (
   'quaternary': #6FCF97
 );
 
+$border: (
+  'primary': #DEDEDE,
+  'secondary': rgba(0, 0, 0, 0.5)
+);
+
 $text: (
   'primary': #586069,
   'secondary': #586069
-)
+);
+
+$shadow: (
+  'default': 0 0 4px rgba(0, 0, 0, 0.25),
+  'offset': 0 4px 5px rgba(0, 0, 0, 0.05)
+);

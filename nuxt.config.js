@@ -19,7 +19,10 @@ export default {
 
   css: ['~/assets/scss/main'],
 
-  plugins: ['~/plugins/axios'],
+  plugins: [
+    { src: '~/plugins/axios' },
+    { src: '~/plugins/visibility', mode: 'client' }
+  ],
 
   components: {
     dirs: [
@@ -30,7 +33,8 @@ export default {
   },
 
   buildModules: [
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@nuxtjs/svg'
   ],
 
   modules: [

@@ -13,10 +13,12 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator'
 @Component
 export default class extends Vue {
   @Prop({ type: Boolean, default: false }) small!: boolean
+  @Prop({ type: Boolean, default: false }) full!: boolean
 
   get classes() {
     return {
-      'container--small': this.small
+      'container--small': this.small,
+      'container--full': this.full
     }
   }
 }
@@ -32,6 +34,10 @@ export default class extends Vue {
 
   &--small {
     max-width: map-get($map: $container, $key: 'small');
+  }
+
+  &--full {
+    height: 100%;
   }
 }
 </style>

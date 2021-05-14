@@ -22,6 +22,7 @@ module.exports = {
     ],
     curly: 0,
     'no-return-assign': 0,
+    camelcase: 0,
     'space-before-function-paren': ['error', 'never'],
     'eol-last': ['error', 'never']
   }

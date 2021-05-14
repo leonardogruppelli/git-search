@@ -3,6 +3,7 @@
     :src="logo"
     alt="GitSearch"
     class="logo"
+    :class="classes"
   >
 </template>
 
